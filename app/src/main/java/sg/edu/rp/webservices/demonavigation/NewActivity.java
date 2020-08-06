@@ -4,6 +4,9 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class NewActivity extends AppCompatActivity {
 
@@ -16,6 +19,16 @@ public class NewActivity extends AppCompatActivity {
 
         ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
+
+        FloatingActionButton fab = findViewById(R.id.fab);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //action
+            }
+        });
+
     }
 
 }
